@@ -4,6 +4,8 @@ from telethon import TelegramClient, events
 import posthandler
 
 
+import sublink
+
 
 client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" +'telethon', api_id, api_hash)
 
