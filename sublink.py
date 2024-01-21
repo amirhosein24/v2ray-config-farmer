@@ -37,11 +37,11 @@ def zout():
         origin = repo.remote(name="origin")
         origin.push()
         try:
-            origin_url = f"https://github.com/{github_username}/{repo_name}.git"
+            origin_url = "https://github.com/{}/{}.git".format(github_username, repo_name)
             origin = repo.create_remote('origin', origin_url)
             origin.fetch()
             origin.push(refspec=repo.head.ref)
-            origin = repo.create_remote('origin', origin_url.replace("https://", f"https://{github_username}:{github_password}@"))
+            origin = repo.create_remote('origin', origin_url.replace("https://", "https://{}:{}@".format(github_username, github_password)))
             origin.fetch()
             origin.push(refspec=repo.head.ref)
         except Exception as e:
