@@ -3,7 +3,7 @@ from os import path, listdir, getcwd
 from base64 import b64encode
 from time import sleep
 from creds import github_password, github_username, repo_name
-import main
+
 def encoder(text):
     text = text.encode('utf-8')
     encoded_data = b64encode(text).decode('utf-8')
