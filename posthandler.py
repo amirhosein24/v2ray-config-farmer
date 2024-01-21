@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from os import mkdir, path
 from re import compile
 from uuid import uuid1

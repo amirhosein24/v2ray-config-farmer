@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from git import Repo
 from os import path, listdir, getcwd
 from base64 import b64encode
@@ -27,7 +29,6 @@ def zout():
                 main += link + "\n"
         with open(home+"/zout.txt", "w") as file:
             file.write(encoder(main))
-
 
         repo = Repo(getcwd())
         repo.git.add(all=True)
