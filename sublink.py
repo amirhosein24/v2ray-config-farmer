@@ -3,7 +3,7 @@ from os import path, listdir, getcwd
 from base64 import b64encode
 from time import sleep
 from creds import github_password, github_username, repo_name
-
+from datetime import datetime
 def encoder(text):
     text = text.encode('utf-8')
     encoded_data = b64encode(text).decode('utf-8')
@@ -16,10 +16,8 @@ def zout():
 
         """
                 todo
-
                 pinger should be here and update the files list with good configs and remove the trash ones
 
-                
         """
 
         main = ""
@@ -38,7 +36,6 @@ def zout():
         origin = repo.remote(name="origin")
         origin.push()
         try:
-
             origin_url = f"https://github.com/{github_username}/{repo_name}.git"
             origin = repo.create_remote('origin', origin_url)
             origin.fetch()
@@ -47,9 +44,10 @@ def zout():
             origin.fetch()
             origin.push(refspec=repo.head.ref)
         except Exception as e:
+            with open(home+"/error_log.txt", "a") as file:
+                file.write(encoder(main))
+                file.write(f"\n-----------------error in git push on {datetime.now()}\n\n\n")
 
-
-            pass
         sleep(3600) # sleep for an hour
 
 from threading import Thread

@@ -23,5 +23,5 @@ async def handler(event):
 
 if __name__ == "__main__":
     with client:
-        print("going live ..., if unsuccessful returns error ")
+        print("going live ... returns error if unsuccessful")
         client.run_until_disconnected()
