@@ -1,0 +1,6 @@
+Cmd('git') failed due to: exit code(128)
+  cmdline: git remote add origin https://github.com/amirhosein24/v2ray-config-farmer.git
+  stderr: 'fatal: remote origin already exists.'
+-----------------error in git push on 2024-01-21 17:04:10.475237
+
+
