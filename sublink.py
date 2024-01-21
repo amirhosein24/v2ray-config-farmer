@@ -45,7 +45,7 @@ def zout():
             origin.push(refspec=repo.head.ref)
         except Exception as e:
             with open(home+"/error_log.txt", "a") as file:
-                file.write(encoder(main))
+                file.write(str(e))
                 file.write(f"\n-----------------error in git push on {datetime.now()}\n\n\n")
 
         sleep(3600) # sleep for an hour
