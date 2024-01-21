@@ -17,6 +17,10 @@ async def handler(event):
     posthandler.handle(message_content)
 
 
+
+
+
+
 if __name__ == "__main__":
     with client:
         print("going live ..., if unsuccessful returns error ")
