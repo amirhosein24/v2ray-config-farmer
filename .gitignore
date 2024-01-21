@@ -1,3 +1,5 @@
 creds.json
 __pycache__/
 cache/
+telethon.session
+telethon.session-journal
