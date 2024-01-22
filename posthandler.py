@@ -23,7 +23,7 @@ def handle(text):
         full_urls = [match.group(0) for match in pattern.finditer(text)]
         
         for i in full_urls:
-            with open(home + f"cache/{uuid1()}.txt", "w", encoding="utf8") as file:
+            with open(home + f"/cache/{uuid1()}.txt", "w", encoding="utf8") as file:
                 file.write(i)
 
     except Exception as e:
