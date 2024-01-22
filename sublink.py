@@ -30,24 +30,20 @@ def zout():
         with open(home+"/zout.txt", "w") as file:
             file.write(encoder(main))
 
-        repo = Repo(getcwd())
-        repo.git.add(all=True)
-        commit_message = "config update on zout commit"
-        repo.index.commit(commit_message)
-        origin = repo.remote(name="origin")
-        origin.push()
         try:
+            repo = Repo(getcwd())
+            repo.git.add(all=True)
+            commit_message = "config update on zout commit"
+            repo.index.commit(commit_message)
             origin_url = "https://github.com/{}/{}.git".format(github_username, repo_name)
-            origin = repo.create_remote('origin', origin_url)
+            origin = repo.remote(name="origin", url=origin_url)
             origin.fetch()
             origin.push(refspec=repo.head.ref)
-            origin = repo.create_remote('origin', origin_url.replace("https://", "https://{}:{}@".format(github_username, github_password)))
-            origin.fetch()
-            origin.push(refspec=repo.head.ref)
+
         except Exception as e:
-            with open(home+"/error_log.txt", "a") as file:
+            with open(home + "/error_log.txt", "a") as file:
                 file.write(str(e))
-                file.write(f"\n-----------------error in git push on {datetime.now()}\n\n\n")
+                file.write(f"\n-----------------unknown error on {datetime.now()}\n\n\n")
 
         sleep(3600) # sleep for an hour
 
