@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
 
-from git import Repo
-from os import path, listdir, getcwd
-from base64 import b64encode
 from time import sleep
-from creds import github_password, github_username, repo_name
+from base64 import b64encode
 from datetime import datetime
+from os import path, listdir, getcwd
+
+# import os
+
+from git import Repo
+# from creds import github_password, github_username, repo_name
+
+
 def encoder(text):
     text = text.encode('utf-8')
     encoded_data = b64encode(text).decode('utf-8')
@@ -30,20 +35,17 @@ def zout():
         with open(home+"/zout.txt", "w") as file:
             file.write(encoder(main))
 
-        try:
-            repo = Repo(getcwd())
-            repo.git.add(all=True)
-            commit_message = "config update on zout commit"
-            repo.index.commit(commit_message)
-            origin_url = "https://github.com/{}/{}.git".format(github_username, repo_name)
-            origin = repo.remote(name="origin", url=origin_url)
-            origin.fetch()
-            origin.push(refspec=repo.head.ref)
+        # os.chdir(home)
 
+        try:
+            repo = Repo(home)
+            repo.git.add(".")
+            repo.index.commit("auto commit for v2ray sub")
+            repo.remote().push()
+            print("Pushed changes to GitHub successfully.")
         except Exception as e:
-            with open(home + "/error_log.txt", "a") as file:
-                file.write(str(e))
-                file.write(f"\n-----------------unknown error on {datetime.now()}\n\n\n")
+            print(f"An error occurred: {e}")
+
 
         sleep(3600) # sleep for an hour
 
