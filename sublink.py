@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from time import sleep
-from base64 import b64encode
-from datetime import datetime
-from os import path, listdir, getcwd
-
-# import os
+import log
 
 from git import Repo
-# from creds import github_password, github_username, repo_name
+from time import sleep
+from base64 import b64encode
+from os import path, listdir
 
 
 def encoder(text):
@@ -35,17 +32,14 @@ def zout():
         with open(home+"/zout.txt", "w") as file:
             file.write(encoder(main))
 
-        # os.chdir(home)
-
         try:
             repo = Repo(home)
             repo.git.add(".")
             repo.index.commit("auto commit for v2ray sub")
             repo.remote().push()
-            print("Pushed changes to GitHub successfully.")
+            
         except Exception as e:
-            print(f"An error occurred: {e}")
-
+            log.addlog(str(e), "sublink-gitpusher")
 
         sleep(3600) # sleep for an hour
 

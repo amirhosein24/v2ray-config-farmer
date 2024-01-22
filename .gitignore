@@ -3,3 +3,4 @@ __pycache__/
 cache/
 telethon.session
 telethon.session-journal
+.vscode/
