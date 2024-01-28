@@ -16,7 +16,7 @@ home = path.dirname(path.abspath(__file__))
 
 def zout():
     while True:
-        # sleep(3600 * 3) # sleep for n hours and then start the first upload
+        sleep(3600 * 3) # sleep for n hours and then start the first upload
 
         files = listdir(home+"/cache/")
 
@@ -33,7 +33,7 @@ def zout():
             with open(home+"/cache/"+config, "r") as file:
                 link = file.read()
                 main += link + "\n"
-            remove(home+"/cache/"+config)
+            #remove(home+"/cache/"+config)
         with open(home+"/zout.txt", "w") as file:
             file.write(encoder(main))
 
