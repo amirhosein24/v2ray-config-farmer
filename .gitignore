@@ -4,3 +4,4 @@ cache/
 telethon.session
 telethon.session-journal
 .vscode/
+venv/
