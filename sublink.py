@@ -5,7 +5,7 @@ import log
 from git import Repo
 from time import sleep
 from base64 import b64encode
-from os import path, listdir
+from os import path, listdir, remove
 
 
 def encoder(text):
@@ -16,19 +16,24 @@ home = path.dirname(path.abspath(__file__))
 
 def zout():
     while True:
+        sleep(3600 * 3) # sleep for n hours and then start the first upload
+
         files = listdir(home+"/cache/")
 
         """
                 todo
-                pinger should be here and update the files list with good configs and remove the trash ones
+                pinger should be here 
+                it is supposed to get a v2ray config and return the real time daley of it (ping) 
+                and so the app can remove the bad configs
 
         """
 
         main = ""
-        for i in files:
-            with open(home+"/cache/"+i, "r") as file:
+        for config in files:
+            with open(home+"/cache/"+config, "r") as file:
                 link = file.read()
                 main += link + "\n"
+            #remove(home+"/cache/"+config)
         with open(home+"/zout.txt", "w") as file:
             file.write(encoder(main))
 
@@ -37,23 +42,9 @@ def zout():
             repo.git.add(".")
             repo.index.commit("auto commit for v2ray sub")
             repo.remote().push()
-            
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
-        sleep(3600) # sleep for an hour
 
 from threading import Thread
 Thread(target=zout).start()
-
-
-# import requests
-# import base64
-# def get_links_from_github():
-#     url = f'https://raw.githubusercontent.com/amirhosein24/V2RAY-CONFIG-FARMER/main/zout.txt'   # sub link
-#     response = requests.get(url)
-#     if response.status_code == 200:
-#         return base64.b64decode(response.text).decode('utf-8')
-#     else:
-#         return f"Failed to retrieve links from GitHub. Status code: {response.status_code}"
-# print(get_links_from_github())
