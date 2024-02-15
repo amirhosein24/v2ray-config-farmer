@@ -16,7 +16,6 @@ home = path.dirname(path.abspath(__file__))
 
 def zout():
     while True:
-        sleep(3600 * 3) # sleep for n hours and then start the first upload
 
         files = listdir(home+"/cache/")
 
@@ -45,6 +44,7 @@ def zout():
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
+        sleep(3600 * 3) # sleep for n hours and then start the first upload
 
 from threading import Thread
 Thread(target=zout).start()
