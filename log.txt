@@ -8,3 +8,9 @@ Cmd('git') failed due to: exit code(-2)
 -----------------error in sublink-gitpusher on 2024-02-15 18:15:29.420570
 
 
+Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain origin
+  stderr: 'fatal: could not read Username for 'https://github.com': No such device or address'
+-----------------error in sublink-gitpusher on 2024-02-15 18:18:07.534665
+
+
