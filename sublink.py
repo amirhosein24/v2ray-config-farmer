@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 
 import log
@@ -44,7 +45,7 @@ def zout():
             repo.remote().push()
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
-        sleep(3600 * 3) # sleep for n hours and then start the first upload
+        sleep(3600 * 10) # sleep for n hours and then start the first upload
 
 
 from threading import Thread
