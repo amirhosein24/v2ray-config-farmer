@@ -18,7 +18,7 @@ def handle(text):
     try:
         text = text["message"]
         proxy_url_pattern = r'(vmess|trojan|vless|ss)://[^\s]+'
-        print(proxy_url_pattern)
+
         pattern = compile(proxy_url_pattern)
         full_urls = [match.group(0) for match in pattern.finditer(text)]
         
