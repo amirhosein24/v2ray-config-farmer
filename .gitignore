@@ -5,3 +5,4 @@ telethon.session
 telethon.session-journal
 .vscode/
 venv/
+.idea/
