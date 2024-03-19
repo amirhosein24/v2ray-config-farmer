@@ -44,7 +44,6 @@ def zout():
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
-        print("---")
         sleep(3600 * 24) # sleep for n hours and then start the first upload
 
 
