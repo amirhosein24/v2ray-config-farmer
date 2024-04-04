@@ -63,7 +63,7 @@ def zout():
             #         break
 
             # if not remote_exists:
-            #     repo.create_remote('origin', remote_url)
+            repo.create_remote('origin', remote_url)
 
             # Push changes
             repo.git.push("origin", "HEAD:master", with_extended_output=True)
