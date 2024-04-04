@@ -27,3 +27,9 @@ Cmd('git') failed due to: exit code(3)
 -----------------error in sublink-gitpusher on 2024-04-04 23:12:44.856012
 
 
+Cmd('git') failed due to: exit code(3)
+  cmdline: git remote add -- origin https://*****:*****@github.com/amirhosein24/v2ray-config-farmer.git
+  stderr: 'error: remote origin already exists.'
+-----------------error in sublink-gitpusher on 2024-04-04 23:17:33.666144
+
+
