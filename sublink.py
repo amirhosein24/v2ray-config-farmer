@@ -8,7 +8,7 @@ from time import sleep
 from base64 import b64encode
 from os import path
 from json import load
-from creds import git
+from creds import git_creds
 
 def encoder(text):
     text = text.encode('utf-8')
@@ -42,13 +42,10 @@ def zout():
             repo = Repo(home)
             repo.git.add(".")
             repo.index.commit("auto commit for configs")
-            repo.git.config('user.name', git[0])
-            repo.git.config('user.email', f'{git[0]}@gmail.com')
-
-            repo.remote(name='origin').set_url(f'https://github.com/{git[0]}/v2ray-config-farmer.git')
-            
-            
-            repo.remote('origin').push(credentials=git.credentials.PersonalAccessToken(git[1]))
+            repo.git.config('user.name', git_creds[0])
+            repo.git.config('user.email', f'{git_creds[0]}@gmail.com')
+            repo.remote(name='origin').set_url(f'https://github.com/{git_creds[0]}/v2ray-config-farmer.git')
+            repo.remote('origin').push(credentials=git_creds.credentials.PersonalAccessToken(git_creds[1]))
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 

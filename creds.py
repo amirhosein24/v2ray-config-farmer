@@ -7,8 +7,8 @@ def load_json():
    api_id = config["api_id"]
    api_hash = config["api_hash"]
    channel_ids = config["channel_ids"]
-   git = config["git"]
+   git_creds = config["git"]
 
-   return api_id, api_hash, channel_ids, git
+   return api_id, api_hash, channel_ids, git_creds
 
-api_id, api_hash, channel_ids, git = load_json()
+api_id, api_hash, channel_ids, git_creds = load_json()
