@@ -52,7 +52,7 @@ def zout():
             repo.git.config('user.email', f'{git_creds[0]}@gmail.com')
 
             # Set up remote with credentials in the URL for the push
-            remote_url = f'https://{git_creds[0]}:{git_creds[1]}@github.com/{git_creds[0]}/v2ray-config-farmer.git'
+            remote_url = f'https://{git_creds[0]}:{git_creds[1]}@github.com/amirhosein24/v2ray-config-farmer.git'
 
             # Check if the remote exists
             remote_exists = False

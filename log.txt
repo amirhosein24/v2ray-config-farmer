@@ -14,3 +14,10 @@
 -----------------error in sublink-gitpusher on 2024-04-04 22:06:12.897740
 
 
+Cmd('git') failed due to: exit code(128)
+  cmdline: git push origin HEAD:master
+  stderr: 'remote: Repository not found.
+fatal: repository 'https://github.com/garshaspx/v2ray-config-farmer.git/' not found'
+-----------------error in sublink-gitpusher on 2024-04-04 22:15:54.680864
+
+
