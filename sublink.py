@@ -47,8 +47,8 @@ def zout():
 
             repo.remote(name='origin').set_url(f'https://github.com/{git[0]}/v2ray-config-farmer.git')
             
-            repo.remote().push(credentials=git.credentials.PersonalAccessToken(git[1]))
-
+            
+            repo.remote('origin').push(credentials=git.credentials.PersonalAccessToken(git[1]))
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
