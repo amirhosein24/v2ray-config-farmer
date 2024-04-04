@@ -8,8 +8,8 @@ from creds import api_hash, api_id, channel_ids  # importing credentials from js
 import sublink  # create a loop for uploading new configs to git
 
 # client setting
-client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" + 'telethon', api_id, api_hash)
-# client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" + 'telethon', api_id, api_hash ,proxy=('socks5', 'localhost', 2080))
+#client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" + 'telethon', api_id, api_hash)
+client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" + 'telethon', api_id, api_hash ,proxy=('socks5', 'localhost', 2080))
 
 # client handler for posts
 @client.on(events.NewMessage(chats=channel_ids))
