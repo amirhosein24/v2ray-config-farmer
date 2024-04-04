@@ -38,11 +38,17 @@ def zout():
             file.write(encoder(main))
 
         try:
+
             repo = Repo(home)
             repo.git.add(".")
-            repo.index.commit("auto commit for v2ray sub")
-            # repo.remote().push()
-            repo.remote().push(f"https://{git[0]}:{git[1]}@github.com/{git[0]}/repo.git")
+            repo.index.commit("auto commit for configs")
+            repo.git.config('user.name', git[0])
+            repo.git.config('user.email', f'{git[0]}@gmail.com')
+
+            repo.remote(name='origin').set_url(f'https://github.com/{git[0]}/v2ray-config-farmer.git')
+            
+            repo.remote().push(credentials=git.credentials.PersonalAccessToken(git[1]))
+
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
