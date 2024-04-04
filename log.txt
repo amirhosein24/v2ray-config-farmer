@@ -33,3 +33,7 @@ Cmd('git') failed due to: exit code(3)
 -----------------error in sublink-gitpusher on 2024-04-04 23:17:33.666144
 
 
+'Remote' object has no attribute 'url'
+-----------------error in sublink-gitpusher on 2024-04-04 23:20:28.311835
+
+

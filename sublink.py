@@ -48,9 +48,8 @@ def zout():
             repo.git.config('user.email', f'{git_creds[0]}@gmail.com')
             remote_url = f'https://{git_creds[0]}:{git_creds[1]}@github.com/amirhosein24/v2ray-config-farmer.git'
 
-
             origin = repo.remote(name="origin")
-            origin.url = remote_url
+            origin.set_url(remote_url)
             origin.push()
             
         except Exception as e:
