@@ -8,6 +8,7 @@ from time import sleep
 from base64 import b64encode
 from os import path
 from json import load
+from creds import git
 
 def encoder(text):
     text = text.encode('utf-8')
@@ -40,7 +41,8 @@ def zout():
             repo = Repo(home)
             repo.git.add(".")
             repo.index.commit("auto commit for v2ray sub")
-            repo.remote().push()
+            # repo.remote().push()
+            repo.remote().push(f"https://{git[0]}:{git[1]}@github.com/{git[0]}/repo.git")
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
