@@ -6,3 +6,7 @@
 -----------------error in sublink-gitpusher on 2024-04-04 22:01:29.008599
 
 
+'list' object has no attribute 'credentials'
+-----------------error in sublink-gitpusher on 2024-04-04 22:04:14.658205
+
+
