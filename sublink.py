@@ -55,15 +55,15 @@ def zout():
             remote_url = f'https://{git_creds[0]}:{git_creds[1]}@github.com/amirhosein24/v2ray-config-farmer.git'
 
             # Check if the remote exists
-            remote_exists = False
-            for remote in repo.remotes:
-                if remote.name == "origin":
-                    remote_exists = True
-                    remote.set_url(remote_url)
-                    break
+            # remote_exists = False
+            # for remote in repo.remotes:
+            #     if remote.name == "origin":
+            #         remote_exists = True
+            #         remote.set_url(remote_url)
+            #         break
 
-            if not remote_exists:
-                repo.create_remote('origin', remote_url)
+            # if not remote_exists:
+            #     repo.create_remote('origin', remote_url)
 
             # Push changes
             repo.git.push("origin", "HEAD:master", with_extended_output=True)
