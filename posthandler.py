@@ -26,7 +26,6 @@ def handle(text):
 
         for url in urls:
             if url in config_list:
-                print("is in")
                 continue
             else:
                 if len(config_list) >= 500:
