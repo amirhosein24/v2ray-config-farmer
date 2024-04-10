@@ -21,12 +21,19 @@ This is a Telegram bot that scrapes V2Ray/Xray/Trojan proxy configurations from 
 
 
 ## Setup
-
+## 1 : install your own farmer
 1. `pip install -r requirements.txt`
 2. create creds.json
 3. Add Telegram API credentials to `creds.json`
 4. Configure channels to listen to in `creds.json`
 5. Start bot: `python main.py`
+## 2 : use ours
+copy this link as a subsciption link for your v2ray client
+
+```
+https://raw.githubusercontent.com/amirhosein24/V2RAY-CONFIG-FARMER/main/zout.txt
+```
+
 
 ## TODO
 
