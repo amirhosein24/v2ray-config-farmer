@@ -50,7 +50,7 @@ def zout():
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
-        sleep(3600 * 5) # sleep for n hours and then start the first upload
+        sleep(3600 * 1) # sleep for n hours and then start the first upload
 
 
 from threading import Thread

@@ -40,7 +40,6 @@ def handle(text):
             json.dump({"configs" : config_list}, file, indent=4)
 
     except Exception as e:
-        print(e)
         log.addlog(str(e), "posthandler")
 
 
