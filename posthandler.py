@@ -2,17 +2,12 @@
 
 import log
 
+import json
+import base64
 from re import compile
-from os import mkdir, path
-
-from json import load, dump
+from os import path
 
 home = path.dirname(path.abspath(__file__)) + "/"
-
-try:
-    mkdir(home + "/cache")
-except:
-    pass
 
 
 def handle(text):
@@ -22,9 +17,18 @@ def handle(text):
         urls = [match.group(0) for match in pattern.finditer(text)]
 
         with open(home + "configs.json", encoding='utf-8') as file:
-            config_list = load(file)["configs"]
+            config_list = json.load(file)["configs"]
 
         for url in urls:
+
+            if not url.startswith("vmess"):
+                url = url.split("#")[0] + "#@garshaspX کانال تلگرام گرشاسپـــ"
+            else:
+                vmess_conf = json.loads(base64.b64decode(url[8:]).decode('utf-8'))
+                vmess_conf["ps"] = "@garshaspX کانال تلگرام گرشاسپـــ"
+                vmess_conf = json.dumps(vmess_conf, ensure_ascii=False).encode('utf-8')
+                url = "vmess://" + base64.b64encode(vmess_conf).decode('utf-8')
+
             if url in config_list:
                 continue
             else:
@@ -33,15 +37,15 @@ def handle(text):
                 config_list.append(url)
 
         with open(home + "configs.json", 'w', encoding="UTF-8") as file:
-            dump({"configs" : config_list}, file, indent=4)
+            json.dump({"configs" : config_list}, file, indent=4)
 
     except Exception as e:
+        print(e)
         log.addlog(str(e), "posthandler")
 
 
 # handle("""
-# vmess://eyJhZGQiOiIxMDQuMjEuMTUuMzYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImxpbmRlMDYuaW5kaWF2aWRlby5zYnMiLCJpZCI6ImVkYmIxMDU5LTE2MzMtNDI3MS1iNjZlLWVkNGZiYTQ3YTFiZiIsIm5ldCI6IndzIiwicGF0aCI6Ii9saW5rd3MiLCJwb3J0IjoiNDQzIiwicHMiOiLwn5SrVGVsZWdyYW06QE1BUkFNQkFTSEkgVGVsZWdyYW06QE1BUkFNQkFTSEkgVGVsZWdyYW06QE1BUkFNQkFTSEkiLCJzY3kiOiJhdXRvIiwic25pIjoibGluZGUwNi5pbmRpYXZpZGVvLnNicyIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
-# vless://8721355e-96d5-4bb9-a99b-b6119d6b1cd4@Www.ZULA.iR:8443?path=%2F&security=tls&encryption=none&alpn=h2,http/1.1&host=uD2kp0fx53e15EHUFNo2LJ7mHRsDgTYET8xzmA7tXh40tR606ogTx280VN.PaGEs.dEv&fp=chrome&type=ws&sni=uD2kp0fx53e15EHUFNo2LJ7mHRsDgTYET8xzmA7tXh40tR606ogTx280VN.PaGEs.dEv#%F0%9F%94%ABTelegram%3A%40@MARAMBASHI+Telegram%3A%40@MARAMBASHI+Telegram%3A%40@MARAMBASHI
-# vless://51905fd3-29de-4b4e-b351-83542f1d5390@172.67.24.121:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&alpn=h2,http/1.1&host=biA.ALlhub.LTD&fp=random&type=ws&sni=Bia.alLhub.Ltd#%F0%9F%94%ABTelegram%3A%40@MARAMBASHI+Telegram%3A%40@MARAMBASHI+Telegram%3A%40@MARAMBASHI
-# vless://d672ec4f-afba-4f61-af09-eec872f97e99@188.114.98.220:443?path=%2Ffreecodes&security=tls&encryption=none&host=test57.pages.dev&fp=chrome&type=ws&sni=test57.pages.dev#%F0%9F%92%9CTelegram%3A%40@MARAMBASHI+Telegram%3A%40@MARAMBASHI+Telegram%3A%40@MARAMBASHI
+# vmess://eyJhZGQiOiIxMDQuMjEuODIuMzkiLCJhaWQiOiIwIiwiaG9zdCI6IiIsImlkIjoiN2E3MzdmNDEtYjc5Mi00MjYwLTk0ZmYtM2Q4NjRkYTY3YjgwIiwibmV0Ijoid3MiLCJwYXRoIjoiIiwicG9ydCI6IjIwOTUiLCJwcyI6IkBIb3BlX05ldC1qb2luLXVzLW9uLVRlbGVncmFtIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9
+# vmess://eyJhZGQiOiI0NS4xNC4yNDQuMTMzIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6ImJmMWRkMzI4LWE2MDUtNDhmZC05MThmLTQ0Y2NhMWNmZTA3ZiIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiMjAyNCIsInBzIjoiQEhvcGVfTmV0LWpvaW4tdXMtb24tVGVsZWdyYW0iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
+# vmess://eyJhZGQiOiIxNTEuMTAxLjMuMTAiLCJhaWQiOiIwIiwiaG9zdCI6Im5tc2wua3AiLCJpZCI6ImQzOWEzNDdhLTAwYzktNGY5MS05MjU1LTdmNTM2YzA3YzVhOCIsIm5ldCI6IndzIiwicGF0aCI6Ii9hcmllcz9lZD0yNTYwIiwicG9ydCI6IjgwIiwicHMiOiJASG9wZV9OZXQtam9pbi11cy1vbi1UZWxlZ3JhbSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ== 
 # """)
