@@ -21,7 +21,7 @@ def zout():
 
 
         with open(home + "/configs.json", encoding='utf-8') as file:
-            config_list = load(file)["configs"]
+            config_list = load(file)["configs"][::-1]
 
         """
                 todo
