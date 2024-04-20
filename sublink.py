@@ -22,6 +22,8 @@ def encoder(text):
 
 def zout():
     while True:
+        sleep(3600 * 1) # sleep for n hours and then push the new configs to github
+        
         try:
 
             with open(home + "/configs.json", encoding='utf-8') as file:
@@ -48,7 +50,6 @@ def zout():
         except Exception as e:
             log.addlog(str(e), "sublink-gitpusher")
 
-        sleep(3600 * 1) # sleep for n hours and then push the new configs to github
 
 
 from threading import Thread

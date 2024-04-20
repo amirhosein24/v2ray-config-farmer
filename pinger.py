@@ -15,7 +15,7 @@ def check_connection(url):
             ip, port = data.split(':')
 
         elif url.startswith('vmess'):
-            return False #TODO
+            return True #TODO
 
         sock = socket.create_connection((ip, port), timeout=5)
         sock.close()
