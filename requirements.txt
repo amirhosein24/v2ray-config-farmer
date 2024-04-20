@@ -1,3 +1,4 @@
 Telethon==1.32.1
 GitPython==3.1.41
 socks
+requests
