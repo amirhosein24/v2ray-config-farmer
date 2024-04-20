@@ -18,6 +18,7 @@ async def handler(event):
     posthandler.handle(message_content["message"])
 
 if __name__ == "__main__":
-    with client:
-        print("going live ... returns error if unsuccessful")
-        client.run_until_disconnected()
+    # with client:
+    client.start()
+    print("going live ... returns error if unsuccessful")
+    client.run_until_disconnected()
