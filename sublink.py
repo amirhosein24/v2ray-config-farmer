@@ -1,15 +1,17 @@
 
 # -*- coding: utf-8 -*-
 
+from git import Repo
+
 import log
 import pinger
 from creds import git_creds
 
-from git import Repo
-from time import sleep
-from base64 import b64encode
 from os import path
 from json import load
+from time import sleep
+from base64 import b64encode
+from threading import Thread
 
 home = path.dirname(path.abspath(__file__))
 
@@ -22,8 +24,8 @@ def encoder(text):
 
 def zout():
     while True:
-        sleep(3600 * 1) # sleep for n hours and then push the new configs to github
-        
+        sleep(3600 * 1)  # sleep for n hours and then push the new configs to github
+
         try:
 
             with open(home + "/configs.json", encoding='utf-8') as file:
@@ -31,7 +33,8 @@ def zout():
 
             main = ""
             for config in config_list:
-                if pinger.check_connection(config): # checks the connection of the config
+                # checks the connection of the config
+                if pinger.check_connection(config):
                     main += config + "\n"
 
             with open(home+"/zout.txt", "w") as file:
@@ -51,6 +54,4 @@ def zout():
             log.addlog(str(e), "sublink-gitpusher")
 
 
-
-from threading import Thread
 Thread(target=zout).start()

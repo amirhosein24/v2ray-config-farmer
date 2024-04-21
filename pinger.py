@@ -1,21 +1,24 @@
-# i dont know what to doooooooooooooooooooooooooooooooooooooo help ╰（‵□′）╯
-#    it is supposed to get a v2ray url and check real time delay and connectivity and return true of false
+
 
 import socket
+import base64
+import json
+
 
 def check_connection(url):
     try:
-        
+
         if url.startswith(('vless', "trojan")):
-            data = url.split("@")[1].split('?')[0]
-            ip, port = data.split(':')
-            
+            config = url.split("@")[1].split('?')[0]
+            ip, port = config.split(':')
+
         elif url.startswith('ss'):
-            data = url.split("@")[1].split('#')[0]
-            ip, port = data.split(':')
+            config = url.split("@")[1].split('#')[0]
+            ip, port = config.split(':')
 
         elif url.startswith('vmess'):
-            return True #TODO
+            config = json.loads(base64.b64decode(url[8:]).decode('utf-8'))
+            ip, port = config["add"], config["port"]
 
         sock = socket.create_connection((ip, port), timeout=5)
         sock.close()
