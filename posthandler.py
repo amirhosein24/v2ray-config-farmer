@@ -6,6 +6,7 @@ import json
 import base64
 from re import compile
 from os import path
+import pinger
 
 home = path.dirname(path.abspath(__file__)) + "/"
 
@@ -20,6 +21,9 @@ def handle(text):
             config_list = json.load(file)["configs"]
 
         for url in urls:
+
+            if not pinger.check_connection(url):
+                continue
 
             if not url.startswith("vmess"):
                 url = url.split("#")[0] + "#@garshaspX کانال تلگرام گرشاسپـــ"
@@ -43,3 +47,4 @@ def handle(text):
 
     except Exception as e:
         log.addlog(str(e), "posthandler")
+
