@@ -38,7 +38,7 @@ def handle(text):
             if url in config_list:
                 continue
             else:
-                if len(config_list) >= 500:
+                if len(config_list) >= 300:
                     config_list.pop(0)
                 config_list.append(url)
 
