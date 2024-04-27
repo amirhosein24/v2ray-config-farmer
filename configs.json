@@ -1,7 +1,5 @@
 {
     "configs": [
-        "vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@54.84.174.207:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@52.207.105.228:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "trojan://telegram-id-privatevpns@13.48.180.189:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "ss://YWVzLTI1Ni1jZmI6ZkcyYXJ0VW1IZk5UMmNYNw==@103.172.116.103:9018#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
@@ -499,6 +497,8 @@
         "vless://38a2070d-a256-48f3-891b-c9b68b01c8f7@79.99.29.220:2083?security=tls&sni=jd.wxgqlfx.top&type=ws&path=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://be6f3bee-f21d-4035-a2c0-1fac85edc6c6@visa.com:8443?path=/join--severnett&security=tls&encryption=none&host=shah67.servernet.cfd&fp=random&type=ws&sni=shah67.servernet.cfd#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://d342d11e-d424-4583-b36e-524ab1f0afa4@204.93.210.132:2096?security=tls&sni=a.ssll.gay&type=ws&path=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "vless://ce5c8209-f8f2-413b-acfc-e01a8e3fb570@104.21.69.44:80?security=none&type=ws&path=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
+        "vless://ce5c8209-f8f2-413b-acfc-e01a8e3fb570@104.21.69.44:80?security=none&type=ws&path=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "vmess://eyJhZGQiOiAiMjE2LjkuMjI0LjUxIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogIiIsICJpZCI6ICJkYzg0YTdhZC04NGM1LTQ0YjktOTVkOS1mNTNiNGNkYTViMjUiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogIjYzNjciLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAicHMiOiAiQGdhcnNoYXNwWCDaqdin2YbYp9mEINiq2YTar9ix2KfZhSDar9ix2LTYp9iz2b7ZgNmA2YAifQ==",
+        "vmess://eyJhZGQiOiAiMTQxLjExLjkwLjExNSIsICJhaWQiOiAiMCIsICJob3N0IjogIiIsICJpZCI6ICI1NGRlNWJjMi1mZDVkLTRhYTEtYWRjOC02YmViMTFlNDAyYjUiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogNDc3NjUsICJ0bHMiOiAiIiwgInR5cGUiOiAiIiwgInYiOiAiMiIsICJwcyI6ICJAZ2Fyc2hhc3BYINqp2KfZhtin2YQg2KrZhNqv2LHYp9mFINqv2LHYtNin2LPZvtmA2YDZgCJ9"
     ]
 }
