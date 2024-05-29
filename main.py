@@ -9,9 +9,9 @@ from creds import api_hash, api_id, channel_ids
 import sublink  # create a loop for uploading new configs to github
 
 # client setting
-# client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" + 'telethon', api_id, api_hash)
-client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" +
-                        'telethon', api_id, api_hash, proxy=('socks5', 'localhost', 2080))
+client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" + 'telethon', api_id, api_hash)
+#client = TelegramClient(path.dirname(path.abspath(__file__)) + "//" +
+ #                       'telethon', api_id, api_hash, proxy=('socks5', 'localhost', 2080))
 
 # client handler for posts
 
