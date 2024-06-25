@@ -1,6 +1,5 @@
 {
     "configs": [
-        "vless://a13df940-020c-465f-bc89-ee5279b5cd6a@160.79.104.91:443?security=tls&sni=zdy700.kpcloud.eu.org&type=ws&path=%2Fblue#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://a13df940-020c-465f-bc89-ee5279b5cd6a@217.163.76.73:443?security=tls&sni=jp700.ylks01.eu.org&type=ws&path=/blue#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://a13df940-020c-465f-bc89-ee5279b5cd6a@198.62.62.204:443?security=tls&sni=zdy700.kpcloud.eu.org&type=ws&path=/?proxyip#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://a13df940-020c-465f-bc89-ee5279b5cd6a@198.62.62.48:443?security=tls&sni=hk700.ylks.link&type=ws&path=/?proxyip#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
@@ -299,6 +298,7 @@
         "vless://D@104.20.31.213:8080?encryption=none&security=none&type=ws&host=MENU.shopservices.ir.&path=%2FSpdNet%40SpdNet%40SpdNet%40SpdNet%40SpdNet%40SpdNet%3Fed%3D2048#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://D@185.146.173.92:8080?encryption=none&security=none&type=ws&host=MEL.shopservices.ir.&path=%2FSpdNet%40SpdNet%40SpdNet%40SpdNet%40SpdNet%40SpdNet%3Fed%3D2052#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@172.66.46.251:443?path=%2F&security=tls&encryption=none&host=bBF9c21A.tECHNeTbpb.paGEs.Dev&type=ws&sni=bBF9c21A.tECHNeTbpb.paGEs.Dev#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@104.18.30.227:443?path=%2F%3Fed&security=tls&encryption=none&host=mmdv2.pages.dev&type=ws&sni=mmdv2.pages.dev#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
+        "vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@104.18.30.227:443?path=%2F%3Fed&security=tls&encryption=none&host=mmdv2.pages.dev&type=ws&sni=mmdv2.pages.dev#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOGJ0OWZZMFFzTFM2ZUxuWFVlMFlt@45.158.171.129:8080#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
     ]
 }
