@@ -1,6 +1,5 @@
 {
     "configs": [
-        "vless://041f929a-63f6-4af1-a492-8cbff5797b8a@172.67.69.236:2096?security=tls&sni=telegram-falcunargo-emiratess.falcunar.asso.eu.org&type=ws&host=telegram-falcunargo-emiratess.falcunar.asso.eu.org&path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2048&fp=random#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://7d96f544-c496-41cf-dd61-337f0aff062a@104.17.25.142:80?type=ws&host=kr1.175852.xyz&path=/abcde#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://7d96f544-c496-41cf-dd61-337f0aff062a@104.17.25.251:80?type=ws&host=kr1.175852.xyz&path=/abcde#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
@@ -299,6 +298,7 @@
         "vless://378ac207-38d3-4401-ba96-3a7931968bc5@104.16.61.8:80?path=%2Fhttp&security=none&encryption=none&host=ca.vpnbase.net&type=ws#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://27f80ed8-70a7-4e77-ad6e-67ca80d8497d@95.38.210.142:8443?security=none&encryption=none&headerType=none&type=tcp#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@series-a2-mec.varzesh360.co:443#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "vless://5df7962e-f9fe-41e6-ab49-ed96ccb856a7@172.66.44.135:80?path=%2FTELEGRAM-MARAMBASHI-MARAMBASHI%2F%3Fed%3D2048&security=none&encryption=none&host=v2ra1.ecrgpk.workers.dev&type=ws#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
+        "vless://5df7962e-f9fe-41e6-ab49-ed96ccb856a7@172.66.44.135:80?path=%2FTELEGRAM-MARAMBASHI-MARAMBASHI%2F%3Fed%3D2048&security=none&encryption=none&host=v2ra1.ecrgpk.workers.dev&type=ws#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "vless://7a5a4624-df8d-4955-bccc-b3fa6161411f@2.189.59.5:443?path=%2FTelegram%2FXV2ray%3Fed%3D2048&security=tls&encryption=none&host=tmcir.pages.dev&type=ws&sni=pages.dev#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
     ]
 }
