@@ -803,3 +803,9 @@ Cmd('git') failed due to: exit code(128)
 -----------------error in sublink-gitpusher on 2024-08-13 09:24:17.990582
 
 
+Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Authentication failed for 'https://github.com/amirhosein24/v2ray-config-farmer.git/''
+-----------------error in sublink-gitpusher on 2024-08-13 10:24:42.509114
+
+
