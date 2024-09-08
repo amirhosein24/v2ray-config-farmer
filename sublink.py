@@ -43,9 +43,9 @@ def zout():
             repo = Repo(home)
             repo.git.add(".")
             repo.index.commit("auto commit for v2ray sub")
-            repo.git.config('user.name', git_creds[0])
-            repo.git.config('user.email', f'{git_creds[0]}@gmail.com')
-            remote_url = f'https://{git_creds[0]}:{git_creds[1]}@github.com/amirhosein24/v2ray-config-farmer.git'
+            repo.git.config('user.name', git_creds["name"])
+            repo.git.config('user.email', {git_creds["email"]})
+            remote_url = f'https://{git_creds["name"]}:{git_creds["token"]}@github.com/amirhosein24/v2ray-config-farmer.git'
             origin = repo.remote(name="origin")
             origin.set_url(remote_url)
             origin.push()

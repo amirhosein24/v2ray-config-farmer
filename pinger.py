@@ -1,12 +1,12 @@
 
-
 import socket
 import base64
 import json
 
-
 def check_connection(url):
     try:
+
+        ip, port = False, False
 
         if url.startswith(('vless', "trojan")):
             config = url.split("@")[1].split('?')[0]
@@ -20,9 +20,13 @@ def check_connection(url):
             config = json.loads(base64.b64decode(url[8:]).decode('utf-8'))
             ip, port = config["add"], config["port"]
 
-        sock = socket.create_connection((ip, port), timeout=5)
-        sock.close()
 
-        return True
+        if ip and port:
+            sock = socket.create_connection((ip, port), timeout=5)
+            sock.close()
+            return True
+        else:
+            return False
+
     except:
         return False
