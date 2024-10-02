@@ -1,7 +1,5 @@
 {
     "configs": [
-        "vless://a13df940-020c-465f-bc89-ee5279b5cd6a@198.62.62.207:443?security=tls&sni=yx.ylka.us.kg&type=ws&path=%2F%3Fed#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "vless://a13df940-020c-465f-bc89-ee5279b5cd6a@198.62.62.52:443?security=tls&sni=yx.ylks.us.kg&type=ws&path=%2F%3Fed#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://48198295-b7ba-4b5c-8d85-085d55a6c869@198.62.62.110:443?security=tls&sni=xx.ylks.xyz&type=ws&path=%2F%3Fproxyip#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://48198295-b7ba-4b5c-8d85-085d55a6c869@198.62.62.166:443?security=tls&sni=xx.ylks.xyz&type=ws&path=%2Fblue#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://a13df940-020c-465f-bc89-ee5279b5cd6a@198.62.62.206:443?security=tls&sni=yx.ylka.us.kg&type=ws&path=%2F%3Fproxyip#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
@@ -299,6 +297,8 @@
         "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.156.92.255:80?security=none&sni=en.mfa.gov.ir&type=ws&host=en.mfa.gov.ir&path=%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%3Fed%3D2560#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://abcbaca-acab-abca-abdc-abaaaccbbcbc@127.0.0.1:8080?security=tls&type=tcp#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "trojan://3672449442956713984@maximum-oyster.mite885.beauty:443?allowInsecure=0#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "vless://6511e6ad-0383-48cd-a5b8-00e4a4c82655@108.162.195.129:443?security=tls&sni=xm.ailicf.us.kg&type=ws&host=xm.ailicf.us.kg&path=%2F6511e&allowInsecure=1#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
+        "vless://6511e6ad-0383-48cd-a5b8-00e4a4c82655@108.162.195.129:443?security=tls&sni=xm.ailicf.us.kg&type=ws&host=xm.ailicf.us.kg&path=%2F6511e&allowInsecure=1#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "vmess://eyJ2IjogIjIiLCAicHMiOiAiQGdhcnNoYXNwWCDaqdin2YbYp9mEINiq2YTar9ix2KfZhSDar9ix2LTYp9iz2b7ZgNmA2YAiLCAiYWRkIjogIjEwNC4xOS41Ny40IiwgInBvcnQiOiAiNDQzIiwgInR5cGUiOiAibm9uZSIsICJpZCI6ICIyNWQxYjMxOC04N2U4LTRjMWUtYTc4NC02OTc4M2JlNGIzMGEiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInBhdGgiOiAiZG9uZ3RhaXdhbmcuY29tIiwgImhvc3QiOiAiaXAxLjU4OTY0My54eXoiLCAidGxzIjogInRscyJ9",
+        "vmess://eyJ2IjogIjIiLCAicHMiOiAiQGdhcnNoYXNwWCDaqdin2YbYp9mEINiq2YTar9ix2KfZhSDar9ix2LTYp9iz2b7ZgNmA2YAiLCAiYWRkIjogIjEwNC4xOC41Ny4xMTEiLCAicG9ydCI6ICI0NDMiLCAidHlwZSI6ICJub25lIiwgImlkIjogIjI1ZDFiMzE4LTg3ZTgtNGMxZS1hNzg0LTY5NzgzYmU0YjMwYSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICJkb25ndGFpd2FuZy5jb20iLCAiaG9zdCI6ICJpcDEuNTg5NjQzLnh5eiIsICJ0bHMiOiAidGxzIn0="
     ]
 }
