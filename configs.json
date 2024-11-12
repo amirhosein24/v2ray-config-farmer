@@ -1,9 +1,5 @@
 {
     "configs": [
-        "trojan://NISHIKUITAN222@104.24.251.6:443?allowInsecure=1&ws=1&wspath=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "trojan://NISHIKUITAN222@104.16.28.13:443?allowInsecure=1&ws=1&wspath=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "vless://262ddcb2-e051-466b-8d1c-d70cfc2a10f1@104.17.148.22:2052?security=none&type=httpupgrade&host=free.dllmoviprime.com.tr&path=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "trojan://NISHIKUITAN222@104.19.217.142:443?allowInsecure=1&ws=1&wspath=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "trojan://NISHIKUITAN222@103.21.244.132:443?allowInsecure=1&ws=1&wspath=%2F#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "trojan://auto@104.20.20.213:443?sni=b96ef9ae.trojanfree-76s.pages.dev&allowInsecure=0#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://caacabb-abac-cbaa-dbac-bbbaabccaacc@127.0.0.1:8080?security=tls&type=tcp#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
@@ -299,6 +295,10 @@
         "vless://d342d11e-d424-4583-b36e-524ab1f0afa4@104.22.36.243:2053?security=tls&sni=wd.vovo.pp.ua&type=ws&host=wd.vovo.pp.ua&path=%2F%3Fed%3D2560&fp=random&allowInsecure=1#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "vless://caabbca-abac-cbaa-cdab-acabcacbabcb@127.0.0.1:8080?security=tls&type=tcp#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
         "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@40.172.50.100:443#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
-        "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@157.241.18.103:443#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
+        "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@157.241.18.103:443#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "vless://2b8a634b-480b-44ce-90d0-1b8e5bd98a46@103.215.221.144:2054?security=reality&sni=zula.ir&type=grpc&serviceName=test&fp=chrome&pbk=5sqkwKAFZW0KJs9lQiIZlNhar8wdk3Bc3fwk_4KPCUY&sid=1623d596#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "trojan://NISHIKUITAN222@104.24.37.235:443?allowInsecure=1#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "trojan://NISHIKUITAN222@198.41.216.197:443?allowInsecure=1#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640",
+        "trojan://NISHIKUITAN222@104.25.242.254:443?allowInsecure=1#@garshaspX \u06a9\u0627\u0646\u0627\u0644 \u062a\u0644\u06af\u0631\u0627\u0645 \u06af\u0631\u0634\u0627\u0633\u067e\u0640\u0640\u0640"
     ]
 }
